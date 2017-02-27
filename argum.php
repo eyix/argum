@@ -9,7 +9,7 @@ class argum {
     foreach($this->args as $argIn) {
       $arg = $argIn;
       $argOut = preg_replace('%^-%', '', $argIn);
-      if (preg_match('%^-%', $argIn) && strlen($argOut) > 1&& !$next) {
+      if (preg_match('%^-%', $argIn) && strlen($argOut) > 1 && !$next) {
         $multi = str_split($argOut);
         foreach ($multi as $mArg) {
           $flags[$mArg] = TRUE;
