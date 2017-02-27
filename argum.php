@@ -4,7 +4,6 @@ class argum {
   public $consume = array();
   private $flags = FALSE;
   function get_args() {
-//    unset($this->args[0]);
     $flags=array();
     $next = FALSE;
     foreach($this->args as $argIn) {
